@@ -1,2 +1,2 @@
 # Projects
-web development Projecs 
+web development Projects 
