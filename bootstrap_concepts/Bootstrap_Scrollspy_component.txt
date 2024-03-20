@@ -1,0 +1,24 @@
+
+1. Bootstrap's Scrollspy component
+
+data-bs-spy="scroll": 
+ -This attribute is part of Bootstrap's Scrollspy component.
+ -Scrollspy is used to automatically update the navigation based on scroll position.
+ -When set to "scroll", it indicates that the Scrollspy feature is enabled. 
+ -As the user scrolls through the webpage, the corresponding navigation item in the navbar will be 
+  highlighted based on the section that is currently in view.
+
+data-bs-target=".navbar": 
+ -This attribute specifies the target element that Scrollspy should monitor. 
+ -In this case, it is set to ".navbar", which means Scrollspy will monitor the elements with the 
+  class "navbar" for changes in scroll position.
+
+data-bs-offset="100": 
+ -This attribute sets an offset value for Scrollspy. 
+ -It defines how far from the top of the page the scroll position should be adjusted before triggering a 
+  change in the active navigation item.
+ -In this case, it's set to 100 pixels. So, when the user scrolls, the active navigation item will be 
+  updated when the corresponding section is within 100 pixels from the top of the viewport.
+
+Overall, these attributes enhance the user experience by providing a smooth navigation experience as
+the user scrolls through the webpage.
