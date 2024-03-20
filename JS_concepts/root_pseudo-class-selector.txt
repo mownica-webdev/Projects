@@ -1,0 +1,70 @@
+
+:root
+
+In CSS, :root is a pseudo-class selector that matches the root element of the document, typically 
+the <html> element. 
+
+It allows you to define CSS rules that apply globally across your entire document, making it useful 
+for setting global variables, defining default styles, or applying styles that should affect the entire 
+document.
+
+Here's how :root is commonly used:
+
+1. Defining Global Variables: 
+   You can use :root to define custom properties (CSS variables) that can be used throughout your stylesheet.
+
+For example:
+
+:root {
+  --main-color: #007bff;
+  --font-family: Arial, sans-serif;
+}
+
+body {
+  color: var(--main-color);
+  font-family: var(--font-family);
+}
+
+
+In this example, --main-color and --font-family are global variables defined at the root level, and they 
+are then used within the body selector.
+
+2. Setting Default Styles: 
+   You can also use :root to set default styles for various elements. 
+
+For example:
+
+:root {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2em; /* 2 times the font-size defined in :root */
+}
+
+p {
+  line-height: 1.5; /* 1.5 times the font-size defined in :root */
+}
+
+Here, font-size: 16px; defined in :root sets the default font size for the entire document, which can
+then be adjusted for specific elements like h1 and p.
+
+3. Global Styles:
+   You can use :root to apply global styles that should affect the entire document. 
+   
+For instance:
+
+:root {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; /* Ensures all elements and pseudo-elements use border-box */
+}
+
+
+This example sets box-sizing: border-box; at the root level, ensuring that all elements and pseudo-elements 
+inherit this box-sizing behavior.
+
+Using :root allows you to establish a central place for defining global styles and variables, 
+promoting consistency and maintainability throughout your CSS codebase.

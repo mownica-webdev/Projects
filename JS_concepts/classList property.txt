@@ -1,0 +1,76 @@
+classList property
+The classList property is an interface provided by DOM (Document Object Model) elements in JavaScript. 
+It provides a convenient way to access and manipulate the CSS classes applied to an element.
+The classList property returns a DOMTokenList object, which represents a set of space-separated tokens
+(i.e., CSS class names) for the element.
+
+The classList interface exposes several methods that allow you to add, remove, toggle, and check for the 
+presence of CSS classes on the element. 
+
+Here's a brief explanation of each method:
+
+1. add("className"): Adds the specified CSS class to the element's class list.
+javascript code:
+element.classList.add("className");
+
+2. remove("className"): Removes the specified CSS class from the element's class list.
+javascript code:
+element.classList.remove("className");
+
+3. toggle("className"): Toggles the presence of the specified CSS class. If the class is present, it removes it; if it's absent, it adds it.
+
+javascript code:
+element.classList.toggle("className");
+contains("className"): Checks whether the specified CSS class is present in the element's class list. Returns true if present, false otherwise.
+
+javascript code:
+if (element.classList.contains("className")) {
+    // Class is present
+}
+
+-The classList property simplifies the process of working with CSS classes compared to manually manipulating
+ the className property, as it provides a more expressive and readable syntax for adding, removing, toggling,
+ and checking classes.
+-Additionally, it automatically handles whitespace and ensures that class manipulation is performed in a safe
+ and efficient manner.
+
+
+
+nav.classList.add("header-scrolled");
+nav: 
+-This variable likely represents a reference to an HTML element, specifically a navigation bar in this context.
+-It's being selected using the querySelector method, which finds the first element in the document that matches
+ the specified selector.
+
+classList: 
+-This is a property of the selected element (nav) that provides access to the list of CSS classes applied
+ to that element.
+-It returns a DOMTokenList object representing the set of classes.
+
+add("header-scrolled"): 
+-This is a method of the classList interface.
+-It's used to add a new CSS class to the element's list of classes. 
+-In this case, the class being added is "header-scrolled".
+-After this line of code executes, the CSS class "header-scrolled" will be added to the list of classes 
+ associated with the nav element.
+
+In summary, the line of code nav.classList.add("header-scrolled"); dynamically modifies the classes applied to the navigation bar (nav) by adding the class "header-scrolled". This likely triggers changes in the navigation bar's appearance or behavior based on the CSS rules associated with the "header-scrolled" class. This kind of dynamic class manipulation is commonly used in web development to create interactive and responsive user interfaces.
+
+
+The classList property is an interface provided by DOM (Document Object Model) elements in JavaScript. 
+It gives access to the list of classes applied to a particular element.
+ 
+Here's a brief explanation:
+classList: It's an object that represents the classes of an element.
+add("className"): This method adds a new class to the list of classes for the element.
+remove("className"): This method removes a class from the list of classes for the element.
+toggle("className"): This method toggles the presence of a class. 
+                     If the class exists, it removes it; otherwise, it adds it.
+contains("className"): This method checks if a class is present on the element.
+
+-In the provided JavaScript code snippet, nav.classList.add("header-scrolled"); is using the add() method to 
+ add the class "header-scrolled" to the list of classes associated with the nav element.
+-This dynamically modifies the element's classes, allowing for changes in styling or behavior based on the 
+ addition or removal of classes.
+
+
