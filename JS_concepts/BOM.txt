@@ -1,0 +1,95 @@
+What is BOM( Browser Object Model) ? The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.
+
+-The Browser Object Model (BOM) is a fundamental component of web development.
+
+-It includes a collection of objects and methods that enable interaction with the browser window.
+
+-Unlike the Document Object Model (DOM), which focuses on page structure, the BOM enables manipulation of 
+the browser.
+
+-Central to the BOM is the window object which is a global entity in client-side JavaScript. 
+
+-It provides access to browser functionalities and allows developers to make use of the BOM to control 
+browser history, manage timers, respond to events, and interact with navigation and location.
+
+-BOM is not standardized and it affects the client-side scripting which plays an important role in 
+creating dynamic and interactive web applications. 
+
+-It offers a programmatic interface to the browser environment.
+
+
+Window Object
+The ‘window object in JavaScript represents your web browser’s window. 
+
+Everything you create in JavaScript, like variables and functions, is automatically part of this window.
+
+Global variables are like items / properties in the window, and global functions are tools/methods you can use from anywhere. 
+
+Even the document object (of the HTML DOM) is a property of the window object
+
+The “document” object, which deals with HTML content, is also a special tool in the window. So, think of
+the “window” as a big container olding all your JavaScript stuff.
+
+The HTML DOM Objects can be treated as the window object’s property:
+
+window.document.getElementById("header");
+
+which is the same as:
+
+document.getElementById("header");
+
+
+Browser Object Model Types
+
+The Browser Object Model (BOM) is a JavaScript API that allows interaction with the browser.
+It provides objects representing browser windows, tabs, history, and more.
+
+ There are several types of objects within the Browser Object Model:
+
+Window Object: 
+-The top-level object representing the browser window.
+-It acts as the global object for JavaScript in a web browser environment.
+-This object contains properties and methods for managing the browser window, such as window.location,
+ window.document, window.alert(), etc.
+
+Document Object: 
+-Represents the HTML document loaded in the browser window.
+-It provides properties and methods for accessing and manipulating the content of the document, 
+ such as document.getElementById(), document.querySelector(), document.createElement(), etc.
+
+Location Object:
+-Represents the current URL of the browser window and provides information about it, such as the protocol, 
+ hostname, port, pathname, etc. It's accessible via window.location.
+ 
+ The window.location object can be written without the window prefix.
+
+Some examples:
+
+window.location.href returns the href (URL) of the current page
+window.location.hostname returns the domain name of the web host
+window.location.pathname returns the path and filename of the current page
+window.location.protocol returns the web protocol used (http: or https:)
+window.location.assign() loads a new document
+
+History Object:
+-Represents the browsing history of the window. 
+-It allows navigating back and forth in the history stack using methods like history.back(), 
+ history.forward(), history.go(), etc. It's accessible via window.history.
+
+Navigator Object: 
+-Provides information about the browser's name, version, platform, and plugins. 
+-It's accessible via window.navigator.
+
+Screen Object: 
+-Represents the user's screen. 
+-It provides information about the screen's width, height, color depth, and pixel depth. 
+-It's accessible via window.screen.
+
+Event Object: 
+-Represents an event occurring within the browser, such as a mouse click, keypress, page load, etc. 
+-Event objects are automatically passed to event handler functions and contain information about the event,
+ such as the type, target element, coordinates, etc.
+
+These are the main objects within the Browser Object Model. 
+They allow JavaScript code to interact with and manipulate various aspects of the browser and the 
+web page displayed in it.
